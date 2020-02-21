@@ -1,0 +1,104 @@
+.container  {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #444;
+}
+
+.block {
+    width: 75px;
+    height: 75px;
+    margin: 25px;
+    border: 2px solid #333;
+}
+
+.active {
+    background: orange;
+}
+
+.hide {
+    display: none;
+}
+
+.img-12-min {
+    width: 64px;
+}
+
+.img-12-max {
+    width: 128px;    border: 3px solid #fff;
+
+}
+
+.active-img {
+    border: 3px solid black;
+}
+.out-10 {
+    width: 450px;
+}
+.out-10 .table-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.out-10 .table-row div {
+    padding: 0px 10px;
+}
+.out-10 .product-name {
+    width: 70%;
+}
+.out-10 .table-row,
+.out-10 .table-footer {
+    height: 50px;
+    line-height: 50px;
+}
+.out-10 .table-row:nth-child(even) {
+    background: #e3e3e3;
+}
+.out-10 .table-footer {
+    text-align: right;
+    padding-right: 10px;
+}
+.out-10 .quantity {
+    position: relative;
+    flex: auto;
+    text-align: center;
+    border-left: 1px solid #777;
+}
+.quantity .plus,
+.quantity .minus {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    background: #777;
+    color: #fff;
+    line-height: 17px;
+    border-radius: 3px;
+    transition: all 0.2s ease-out;
+
+}
+.quantity .plus:hover {
+    background: #4caf50;
+}
+.quantity .minus:hover {
+    background: #f44336;
+}
+.quantity .plus:hover,
+.quantity .minus:hover {
+    cursor: pointer;
+}
+.quantity .plus:active {
+    background: rgba(76, 175, 80, 0.7);
+}
+.quantity .minus:active {
+    background: rgba(244, 67, 54, 0.7);
+}
+.quantity .plus {
+    top: 6px;
+}
+.quantity .minus {
+    bottom: 6px;
+}
